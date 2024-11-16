@@ -1,0 +1,121 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #f4f4f4;
+}
+
+header .banner {
+	width: 100%;
+	height: auto;
+}
+
+.perfil {
+	margin: 20px 0;
+}
+
+.perfil .logo {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 5px solid #ddd;
+}
+
+.perfil h1 {
+	margin: 10px 0;
+	font-size: 2rem;
+	color: #333;
+}
+
+.redes {
+	display: flex;
+	justify-content: center;
+	gap: 15px; /* Espaciado por defecto */
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+
+.redes .boton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	width: 150px; /* Fijo para mejor distribución en pantallas pequeñas */
+}
+
+.redes .boton img {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+}
+
+.redes .boton.youtube {
+	background-color: #FF0000;
+}
+
+.redes .boton.youtube:hover {
+	background-color: #CC0000;
+}
+
+.redes .boton.facebook {
+	background-color: #1877F2;
+}
+
+.redes .boton.facebook:hover {
+	background-color: #145DBF;
+}
+
+.redes .boton.tiktok {
+	background-color: #000;
+}
+
+.redes .boton.tiktok:hover {
+	background-color: #333;
+}
+
+/* Media Queries para dispositivos medianos y pequeños */
+@media (max-width: 768px) {
+	.perfil .logo {
+		width: 120px;
+		height: 120px;
+	}
+
+	.perfil h1 {
+		font-size: 1.5rem;
+	}
+
+	.redes {
+		gap: 25px; /* Mayor separación horizontal entre los botones */
+	}
+
+	.redes .boton {
+		width: 160px; /* Botones un poco más anchos */
+	}
+}
+
+@media (max-width: 480px) {
+	.perfil .logo {
+		width: 100px;
+		height: 100px;
+	}
+
+	.perfil h1 {
+		font-size: 1.2rem;
+	}
+
+	.redes {
+		gap: 40px; /* Aumenta la separación horizontal en pantallas muy pequeñas */
+	}
+
+	.redes .boton {
+		padding: 8px 15px;
+		font-size: 1rem;
+		width: 180px; /* Botones más largos para mejor visibilidad */
+	}
+}
